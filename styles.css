@@ -1,2 +1,37 @@
 /*Stylesheet for Admin Dashboard*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 800px;
+    grid-template-rows: 200px 800px;
+}
+
+.header {
+    background-color: beige;
+    grid-column: 2 / -1;
+}
+
+.sidebar {
+    background-color: rgb(0, 153, 255);
+    grid-row: 1 / -1;
+}
+
+.main {
+    background-color: aliceblue;
+}
+
+.footer {
+    background-color: burlywood;
+    min-height: 50px;
+
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
