@@ -8,7 +8,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 200px 800px;
+    grid-template-columns: 300px 1000px;
     grid-template-rows: 200px 800px;
 }
 
@@ -19,11 +19,56 @@ body {
 
 .sidebar {
     background-color: rgb(0, 153, 255);
+    padding: 10px;
+
     grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sidebarMain, .sidebarSupport {
+    display: grid;
+    gap: 20px;
+}
+
+.sidebarItem {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
 .main {
     background-color: aliceblue;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projectCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.projectCard {
+    border: 2px solid black;
+    height: 230px;
+}
+
+.mainSupplemental {
+    display: grid;
+    gap: 20px;
+}
+
+.announcementCard {
+    border: 2px solid black;
+}
+
+.trendCard {
+    border: 2px solid black;
 }
 
 .footer {
