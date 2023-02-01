@@ -6,20 +6,102 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-blue: #2d5cca;
+    --background: #EBECEA;
+    --dark: #162521;
+    --accent-red: #F07167;
+    --accent-orange: #F7A072;
+}
+
 body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+
     display: grid;
-    grid-template-columns: 300px 1000px;
-    grid-template-rows: 200px 800px;
+    grid-template-columns: 1.2fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .header {
-    background-color: beige;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    z-index: 10;
+
     grid-column: 2 / -1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search input {
+    flex: 1;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--background);
+}
+
+.search button {
+    background-color: white;
+    border: none;
+}
+
+.search button:hover {
+    scale: 110%;
+    cursor: pointer;
+}
+
+.search .icon {
+    height: 25px;
+}
+
+.profileSmall {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profileLarge {
+    height: 80px;
+    border-radius: 40px;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color:var(--main-blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero button:hover {
+    filter: brightness(120%);
+}
+
+
 .sidebar {
-    background-color: rgb(0, 153, 255);
-    padding: 10px;
+    background-color: var(--main-blue);
+    color: white;
+    padding: 20px;
 
     grid-row: 1 / -1;
     display: flex;
@@ -27,24 +109,47 @@ body {
     gap: 60px;
 }
 
-.sidebarMain, .sidebarSupport {
+.sidebarHeader {
     display: grid;
     gap: 20px;
+}
+
+.sidebarHeader .icon {
+    height: 60px;
+    padding-left: 15px;
+}
+
+.sidebarMain, .sidebarSupport {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: grid;
+    gap: 20px;
+}
+
+.sidebarMain .icon, .sidebarSupport .icon{
+    height: 30px;
+    padding-left: 25px;
 }
 
 .sidebarItem {
+    padding-left: 5px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
 .main {
-    background-color: aliceblue;
+    background-color: var(--background);
     padding: 20px;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
+}
+
+.main h3 {
+    padding-bottom: 10px;
 }
 
 .projectCards {
@@ -54,8 +159,33 @@ body {
 }
 
 .projectCard {
-    border: 2px solid black;
-    height: 230px;
+    padding: 20px;
+    height: 280px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: inset 8px 0 var(--accent-orange), 3px 3px 3px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard p {
+    flex: 1;
+}
+
+.projectLinks {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.projectLinks .icon {
+    height: 25px;
+}
+
+.projectLinks .icon:hover {
+    scale: 110%;
+    cursor: pointer;
 }
 
 .mainSupplemental {
@@ -64,15 +194,62 @@ body {
 }
 
 .announcementCard {
-    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+
+    display: grid;
+    gap: 20px;
+}
+
+.announcementCard hr {
+    border: 1px solid #EBECEA;
+}
+
+.announcementTitle {
+    font-weight: 600;
+}
+
+.announcementDescription {
+    font-size: 0.8rem;
+    color: rgb(61, 61, 61)
 }
 
 .trendCard {
-    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+
+    display: grid;
+    gap: 20px;
+}
+
+.trendItem {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendLogo {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.tag {
+    font-weight: 600;
+}
+
+.trendTopic {
+    font-size: 0.8rem;
+    color: rgb(61, 61, 61)
 }
 
 .footer {
-    background-color: burlywood;
+    background-color: var(--dark);
+    color: white;
     min-height: 50px;
 
     grid-column: 1 / -1;
