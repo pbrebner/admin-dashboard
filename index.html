@@ -1,211 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-</head>
-<body>
-    <header class="header">
-        <div class="search">
-            <button>
-                <img src="assets/magnify.svg" alt="Search" class="icon">
-            </button>
-            <input type="text">
-            <div class="spacer"></div>
-            <button>
-                <img src="assets/bell-ring.svg" alt="Notification" class="icon">
-            </button>
-            <img src="assets/avatar/astronaut-saturn.jpg" alt="Profile-small" class="profileSmall">
-            <h3>Morgan Oakley</h3>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="search">
+                <button>
+                    <img src="assets/magnify.svg" alt="Search" class="icon" />
+                </button>
+                <input type="text" />
+                <div class="spacer"></div>
+                <button>
+                    <img
+                        src="assets/bell-ring.svg"
+                        alt="Notification"
+                        class="icon"
+                    />
+                </button>
+                <img
+                    src="assets/avatar/astronaut-saturn.jpg"
+                    alt="Profile-small"
+                    class="profileSmall"
+                />
+                <h3>Morgan Oakley</h3>
+            </div>
 
-        <div class="hero">
-            <img src="assets/avatar/astronaut-saturn.jpg" alt="Profile-Large" class="profileLarge">
-            <div>
-                <p>Hi there,</p>
-                <h2>Morgan Oakley (@morgan)</h2>
+            <div class="hero">
+                <img
+                    src="assets/avatar/astronaut-saturn.jpg"
+                    alt="Profile-Large"
+                    class="profileLarge"
+                />
+                <div>
+                    <p>Hi there,</p>
+                    <h2>Morgan Oakley (@morgan)</h2>
+                </div>
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-        </div>
-    </header>
-    
-    <div class="sidebar">
-        <div class="sidebarHeader">
-            <div class="sidebarItem">
-                <img src="assets/view-dashboard.svg" alt="Dashboard" class="icon">
-                <h1>Dashboard</h1>
-            </div>
-        </div>
+        </header>
 
-        <div class="sidebarMain">
-            <div class="sidebarItem">
-                <img src="assets/home.svg" alt="Home" class="icon">
-                <p>Home</p>
+        <div class="sidebar">
+            <div class="sidebarHeader">
+                <div class="sidebarItem">
+                    <img
+                        src="assets/view-dashboard.svg"
+                        alt="Dashboard"
+                        class="icon"
+                    />
+                    <h1>Dashboard</h1>
+                </div>
             </div>
-            <div class="sidebarItem">
-                <img src="assets/profile.svg" alt="Profile" class="icon">
-                <p>Profile</p>
-            </div>
-            <div class="sidebarItem">
-                <img src="assets/message-reply.svg" alt="Messages" class="icon">
-                <p>Messages</p>
-            </div>
-            <div class="sidebarItem">
-                <img src="assets/clock.svg" alt="History" class="icon">
-                <p>History</p>
-            </div>
-            <div class="sidebarItem">
-                <img src="assets/note-multiple.svg" alt="Tasks" class="icon">
-                <p>Tasks</p>
-            </div>
-            <div class="sidebarItem">
-                <img src="assets/account-group.svg" alt="Communities" class="icon">
-                <p>Communities</p>
-            </div>
-        </div>
 
-        <div class="sidebarSupport">
-            <div class="sidebarItem">
-                <img src="assets/cog.svg" alt="Setting" class="icon">
-                <p>Settings</p>
+            <div class="sidebarMain">
+                <div class="sidebarItem">
+                    <img src="assets/home.svg" alt="Home" class="icon" />
+                    <p>Home</p>
+                </div>
+                <div class="sidebarItem">
+                    <img src="assets/profile.svg" alt="Profile" class="icon" />
+                    <p>Profile</p>
+                </div>
+                <div class="sidebarItem">
+                    <img
+                        src="assets/message-reply.svg"
+                        alt="Messages"
+                        class="icon"
+                    />
+                    <p>Messages</p>
+                </div>
+                <div class="sidebarItem">
+                    <img src="assets/clock.svg" alt="History" class="icon" />
+                    <p>History</p>
+                </div>
+                <div class="sidebarItem">
+                    <img
+                        src="assets/note-multiple.svg"
+                        alt="Tasks"
+                        class="icon"
+                    />
+                    <p>Tasks</p>
+                </div>
+                <div class="sidebarItem">
+                    <img
+                        src="assets/account-group.svg"
+                        alt="Communities"
+                        class="icon"
+                    />
+                    <p>Communities</p>
+                </div>
             </div>
-            <div class="sidebarItem">
-                <img src="assets/help-box.svg" alt="Support" class="icon">
-                <p>Support</p>
-            </div>
-            <div class="sidebarItem">
-                <img src="assets/shield-check.svg" alt="Privacy" class="icon">
-                <p>Privacy</p>
-            </div>
-        </div>
-    </div>
 
-    <main class="main">
-        <div class="projects">
-            <h3>Your Projects</h3>
-            <div class="projectCards">
-                <div class="projectCard">
-                    <h4>Super Cool Project</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam voluptatibus molestiae mollitia debitis velit dolorem amet tempora, itaque porro adipisci necessitatibus, doloribus hic suscipit dolorum optio quaerat provident qui distinctio.</p>
-                    <div class="projectLinks">
-                        <img src="assets/star-plus-outline.svg" alt="Star" class="icon">
-                        <img src="assets/eye-plus-outline.svg" alt="Inspect" class="icon">
-                        <img src="assets/source-branch.svg" alt="Link" class="icon">
-                    </div>
+            <div class="sidebarSupport">
+                <div class="sidebarItem">
+                    <img src="assets/cog.svg" alt="Setting" class="icon" />
+                    <p>Settings</p>
                 </div>
-                <div class="projectCard">
-                    <h4>Less Cool Project</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore quod dignissimos, deserunt magni maxime libero nam quam, quia minima eos tempora sit suscipit natus quibusdam consectetur quasi fugiat incidunt?</p>
-                    <div class="projectLinks">
-                        <img src="assets/star-plus-outline.svg" alt="Star" class="icon">
-                        <img src="assets/eye-plus-outline.svg" alt="Inspect" class="icon">
-                        <img src="assets/source-branch.svg" alt="Link" class="icon">
-                    </div>
+                <div class="sidebarItem">
+                    <img src="assets/help-box.svg" alt="Support" class="icon" />
+                    <p>Support</p>
                 </div>
-                <div class="projectCard">
-                    <h4>Imposible App</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus nihil earum, tenetur, maiores nemo accusamus, voluptas excepturi vero quod minus ut. Explicabo recusandae voluptatum voluptatibus. Porro in autem natus!</p>
-                    <div class="projectLinks">
-                        <img src="assets/star-plus-outline.svg" alt="Star" class="icon">
-                        <img src="assets/eye-plus-outline.svg" alt="Inspect" class="icon">
-                        <img src="assets/source-branch.svg" alt="Link" class="icon">
-                    </div>
-                </div>
-                <div class="projectCard">
-                    <h4>Easy Peasy App</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed ipsum exercitationem suscipit iure reprehenderit! Hic ullam nesciunt consequuntur, maxime, non impedit odio obcaecati repellendus quae reiciendis est quas aliquam!</p>
-                    <div class="projectLinks">
-                        <img src="assets/star-plus-outline.svg" alt="Star" class="icon">
-                        <img src="assets/eye-plus-outline.svg" alt="Inspect" class="icon">
-                        <img src="assets/source-branch.svg" alt="Link" class="icon">
-                    </div>
-                </div>
-                <div class="projectCard">
-                    <h4>Ad Blocker</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur, nobis iure, a, aperiam hic sit quos dolore illum voluptatum vitae necessitatibus aut repellendus nisi quae! Hic reprehenderit quae laborum?</p>
-                    <div class="projectLinks">
-                        <img src="assets/star-plus-outline.svg" alt="Star" class="icon">
-                        <img src="assets/eye-plus-outline.svg" alt="Inspect" class="icon">
-                        <img src="assets/source-branch.svg" alt="Link" class="icon">
-                    </div>
-                </div>
-                <div class="projectCard">
-                    <h4>Money Maker</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, eaque at doloremque architecto voluptates nam unde dolore animi alias amet quo distinctio ex blanditiis eos quaerat quas sit. Facilis, soluta.</p>
-                    <div class="projectLinks">
-                        <img src="assets/star-plus-outline.svg" alt="Star" class="icon">
-                        <img src="assets/eye-plus-outline.svg" alt="Inspect" class="icon">
-                        <img src="assets/source-branch.svg" alt="Link" class="icon">
-                    </div>
+                <div class="sidebarItem">
+                    <img
+                        src="assets/shield-check.svg"
+                        alt="Privacy"
+                        class="icon"
+                    />
+                    <p>Privacy</p>
                 </div>
             </div>
         </div>
 
-        <div class="mainSupplemental">
-            <div class="announcements">
-                <h3>Announcements</h3>
-                <div class="announcementCard">
-                    <div class="announcementItem">
-                        <p class="announcementTitle">Announcement Title</p>
-                        <p class="announcementDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sequi rem eius vero placeat necessitatibus mollitia perferendis totam unde, reprehenderit qui nobis error dolorem velit, laudantium temporibus nulla ea consequatur?</p>
-                    </div>
-                    <hr>
-                    <div class="announcementItem">
-                        <p class="announcementTitle">Announcement Title</p>
-                        <p class="announcementDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error veniam deleniti, dignissimos, nesciunt corporis earum quibusdam praesentium amet eveniet exercitationem impedit quia et id, ducimus ex culpa. Culpa, facere id.</p>
-                    </div>
-                    <hr>
-                    <div class="announcementItem">
-                        <p class="announcementTitle">Announcement Title</p>
-                        <p class="announcementDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ea neque officiis voluptatum itaque, alias eaque non provident nihil veritatis suscipit distinctio! Dolores aut esse at minima, odit quaerat quibusdam.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="trending">
-                <h3>Trending</h3>
-                <div class="trendCard">
-                    <div class="trendItem">
-                        <img src="assets/avatar/astronaut-burger.jpg" alt="Logo" class="trendLogo">
-                        <div class="trendTitle">
-                            <p class="tag">@tegan</p>
-                            <p class="trendTopic">World Peace Builder</p>
+        <main class="main">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <div class="projectCards">
+                    <div class="projectCard">
+                        <h4>Super Cool Project</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Nam voluptatibus molestiae mollitia debitis
+                            velit dolorem amet tempora, itaque porro adipisci
+                            necessitatibus, doloribus hic suscipit dolorum optio
+                            quaerat provident qui distinctio.
+                        </p>
+                        <div class="projectLinks">
+                            <img
+                                src="assets/star-plus-outline.svg"
+                                alt="Star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/eye-plus-outline.svg"
+                                alt="Inspect"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/source-branch.svg"
+                                alt="Link"
+                                class="icon"
+                            />
                         </div>
                     </div>
-                    <div class="trendItem">
-                        <img src="assets/avatar/astronaut-saturn.jpg" alt="Logo" class="trendLogo">
-                        <div class="trendTitle">
-                            <p class="tag">@morgan</p>
-                            <p class="trendTopic">Super Cool Project</p>
+                    <div class="projectCard">
+                        <h4>Less Cool Project</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Alias tempore quod dignissimos, deserunt magni
+                            maxime libero nam quam, quia minima eos tempora sit
+                            suscipit natus quibusdam consectetur quasi fugiat
+                            incidunt?
+                        </p>
+                        <div class="projectLinks">
+                            <img
+                                src="assets/star-plus-outline.svg"
+                                alt="Star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/eye-plus-outline.svg"
+                                alt="Inspect"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/source-branch.svg"
+                                alt="Link"
+                                class="icon"
+                            />
                         </div>
                     </div>
-                    <div class="trendItem">
-                        <img src="assets/avatar/astronaut-rocket.jpg" alt="Logo" class="trendLogo">
-                        <div class="trendTitle">
-                            <p class="tag">@kendal</p>
-                            <p class="trendTopic">Life Changing App</p>
+                    <div class="projectCard">
+                        <h4>Imposible App</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Vel ducimus nihil earum, tenetur, maiores nemo
+                            accusamus, voluptas excepturi vero quod minus ut.
+                            Explicabo recusandae voluptatum voluptatibus. Porro
+                            in autem natus!
+                        </p>
+                        <div class="projectLinks">
+                            <img
+                                src="assets/star-plus-outline.svg"
+                                alt="Star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/eye-plus-outline.svg"
+                                alt="Inspect"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/source-branch.svg"
+                                alt="Link"
+                                class="icon"
+                            />
                         </div>
                     </div>
-                    <div class="trendItem">
-                        <img src="assets/avatar/astronaut-burger.jpg" alt="Logo" class="trendLogo">
-                        <div class="trendTitle">
-                            <p class="tag">@tegan</p>
-                            <p class="trendTopic">No Trafic Maker</p>
+                    <div class="projectCard">
+                        <h4>Easy Peasy App</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Recusandae sed ipsum exercitationem suscipit
+                            iure reprehenderit! Hic ullam nesciunt consequuntur,
+                            maxime, non impedit odio obcaecati repellendus quae
+                            reiciendis est quas aliquam!
+                        </p>
+                        <div class="projectLinks">
+                            <img
+                                src="assets/star-plus-outline.svg"
+                                alt="Star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/eye-plus-outline.svg"
+                                alt="Inspect"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/source-branch.svg"
+                                alt="Link"
+                                class="icon"
+                            />
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <h4>Ad Blocker</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolores consequuntur, nobis iure, a, aperiam
+                            hic sit quos dolore illum voluptatum vitae
+                            necessitatibus aut repellendus nisi quae! Hic
+                            reprehenderit quae laborum?
+                        </p>
+                        <div class="projectLinks">
+                            <img
+                                src="assets/star-plus-outline.svg"
+                                alt="Star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/eye-plus-outline.svg"
+                                alt="Inspect"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/source-branch.svg"
+                                alt="Link"
+                                class="icon"
+                            />
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <h4>Money Maker</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Culpa, eaque at doloremque architecto
+                            voluptates nam unde dolore animi alias amet quo
+                            distinctio ex blanditiis eos quaerat quas sit.
+                            Facilis, soluta.
+                        </p>
+                        <div class="projectLinks">
+                            <img
+                                src="assets/star-plus-outline.svg"
+                                alt="Star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/eye-plus-outline.svg"
+                                alt="Inspect"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/source-branch.svg"
+                                alt="Link"
+                                class="icon"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </main>
+            <div class="mainSupplemental">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcementCard">
+                        <div class="announcementItem">
+                            <p class="announcementTitle">Announcement Title</p>
+                            <p class="announcementDescription">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ad sequi rem eius vero placeat
+                                necessitatibus mollitia perferendis totam unde,
+                                reprehenderit qui nobis error dolorem velit,
+                                laudantium temporibus nulla ea consequatur?
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="announcementItem">
+                            <p class="announcementTitle">Announcement Title</p>
+                            <p class="announcementDescription">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Error veniam deleniti,
+                                dignissimos, nesciunt corporis earum quibusdam
+                                praesentium amet eveniet exercitationem impedit
+                                quia et id, ducimus ex culpa. Culpa, facere id.
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="announcementItem">
+                            <p class="announcementTitle">Announcement Title</p>
+                            <p class="announcementDescription">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sequi ea neque officiis
+                                voluptatum itaque, alias eaque non provident
+                                nihil veritatis suscipit distinctio! Dolores aut
+                                esse at minima, odit quaerat quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-    <footer class="footer">
-        <p>Copyright &copy; Patrick Brebner 2022</p>
-    </footer>
-    
-</body>
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trendCard">
+                        <div class="trendItem">
+                            <img
+                                src="assets/avatar/astronaut-burger.jpg"
+                                alt="Logo"
+                                class="trendLogo"
+                            />
+                            <div class="trendTitle">
+                                <p class="tag">@tegan</p>
+                                <p class="trendTopic">World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trendItem">
+                            <img
+                                src="assets/avatar/astronaut-saturn.jpg"
+                                alt="Logo"
+                                class="trendLogo"
+                            />
+                            <div class="trendTitle">
+                                <p class="tag">@morgan</p>
+                                <p class="trendTopic">Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trendItem">
+                            <img
+                                src="assets/avatar/astronaut-rocket.jpg"
+                                alt="Logo"
+                                class="trendLogo"
+                            />
+                            <div class="trendTitle">
+                                <p class="tag">@kendal</p>
+                                <p class="trendTopic">Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trendItem">
+                            <img
+                                src="assets/avatar/astronaut-burger.jpg"
+                                alt="Logo"
+                                class="trendLogo"
+                            />
+                            <div class="trendTitle">
+                                <p class="tag">@tegan</p>
+                                <p class="trendTopic">No Trafic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Developed by Patrick Brebner</p>
+        </footer>
+    </body>
 </html>
