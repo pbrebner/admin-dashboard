@@ -1,5 +1,18 @@
 # Admin Dashboard
-![My Image](UI.png)
 
-##About
-Flexible dashboard layout, primarily created using Grid and occasionally flexbox.
+![My Image](updateUI.png)
+
+## About
+
+Flexible dashboard layout created primarily using Grid as part of The ODIN Project curriculum.
+
+[Check it out](https://pbrebner.github.io/admin-dashboard/)
+
+## Topics Covered
+
+-   CSS Grid
+-   Intermediate HTML and CSS
+
+## TODO
+
+-   Add functionality with Javascript
